@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+/* font-family: 'Outfit', sans-serif; */
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+--Very-dark-blue-main: hsl(217, 54%, 11%);
+--Very-dark-blue-line: hsl(215, 15%, 56%);
+--Very-dark-blue-card: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--Very-dark-blue-main);
+}
+.container {
+    background-color: var(--Very-dark-blue-card);
+    border: 1px solid var(--Very-dark-blue-card);
+    height: max-content;
+    border-radius: 15px;
+    margin: 50px 15px;
+    
+}
+.main-image {
+    position: relative;
+    margin: 0 auto;
+
+}
+.nft-image {
+    width: 90%;
+    margin: 18px;
+    border-radius: 15px;
+    display: block;
+}
+.overlay {
+    background-color: var(--Cyan);
+    border-radius:15px ;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+width: 90%;
+margin-left: 17px;
+}
+.view {
+    position: absolute;
+    display: none;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+.main-image:hover .overlay {
+    opacity: 0.5;
+    cursor: pointer;
+
+}
+.main-image:hover .overlay + .view {
+    display: block;
+}
+h1 { 
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 1.45em;
+    color: var(--White);
+    margin-left: 18px;
+
+}
+.paragraph {
+    color: var(--Soft-blue);
+    font-family: 'Outfit', sans-serif;
+    margin-left: 18px;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.nft-logo {
+    margin-left: 18px;
+}
+.eth {
+    color:var(--Cyan);
+    font-family: 'Outfit', sans-serif;
+    margin-left: 4px;
+    font-weight: 600;
+}
+.clock-logo {
+    margin-left: 100px;
+}
+.days {
+    font-family: 'Outfit', sans-serif;
+    margin-left: 4px;
+    font-weight: 300;
+    color: var(--Soft-blue);
+}
+hr {
+    margin: 20px;
+    background-color: var(--Very-dark-blue-line);
+}
+.avatar {
+    width: 12%;
+    border: 1px solid var(--White);
+    border-radius: 50px;
+    margin-left: 18px;
+}
+.creation {
+     position: absolute;
+     margin-top: 10px;
+     margin-left: 15px;
+     color: var(--Soft-blue);
+     font-family: 'Outfit', sans-serif;
+     
+}
+strong {
+    color: var(--White);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 100;
+    
+
+}
